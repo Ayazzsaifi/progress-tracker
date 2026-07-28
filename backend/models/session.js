@@ -18,4 +18,4 @@ const sessionSchema = new mongoose.Schema({
 })
 
 const session=mongoose.model("session",sessionSchema)
-module.exports=Session
+module.exports=session
