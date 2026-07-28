@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Progress Tracker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <div id="container">
+    <h1>Progress Tracker</h1>
+    <form>
+        <div id="register-form">
+            <h2>Register</h2>
+            <input type="text" placeholder="Name" id="name-inputRegister">
+            <input type="email" placeholder="Email" id="email-inputRegister">
+            <input type="password" placeholder="Password" id="password-inputRegister">
+            <button id="loginBtn" type="button">Already have account?</button>
+            <button id="submitBtn-register" type="button">Submit</button>
+        </div>
+
+        <div id="login-form" style="display:none">
+            <h2>Login</h2>
+            <input type="email" placeholder="Email" id="email-inputLogin">
+            <input type="password" placeholder="Password" id="password-inputLogin">
+             <button id="registerBtn" type="button">Dont have account?</button>
+             <button id="submitBtn-login" type="button">Submit</button>
+        </div>
+
+        <p id="message"></p>
+
+    </form>
+    </div>
+
+    <script src="auth.js"></script>
+</body>
+
+</html>
