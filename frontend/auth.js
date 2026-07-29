@@ -28,7 +28,7 @@ sbumitBtnRegister.addEventListener("click", async function () {
     const password = passwordRegister.value
 
     try {
-        const res = await fetch("http://localhost:3000/api/auth/register", {
+        const res = await fetch("https://progress-tracker-706k.onrender.com/api/auth/register", {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({ name, email, password })
@@ -52,7 +52,7 @@ submitBtnLogin.addEventListener("click", async function () {
     const password = passwordLogin.value
 
     try {
-        const respose = await fetch("http://localhost:3000/api/auth/login", {
+        const respose = await fetch("https://progress-tracker-706k.onrender.com/api/auth/login", {
             method: "POST",
             headers: { "Content-type": "application/json" },
             body: JSON.stringify({ email, password })

@@ -86,3 +86,14 @@ button {
   font-size: 13px;
   color: #666;
 }
+
+#streak {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 1rem;
+}
+
+#past-session {
+  margin-top: 1.5rem;
+  width: 360px;
+}

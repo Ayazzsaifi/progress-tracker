@@ -6,7 +6,7 @@ SubmitBtn.addEventListener("click", async function () {
     const topic = topicLog.value
     const notes = notesLog.value
     try {
-        const response = await fetch("http://localhost:3000/api/session/Create", {
+        const response = await fetch("https://progress-tracker-706k.onrender.com/api/session/Create", {
             method: "POST",
             headers: {
                 "Content-Type": "application/json",
@@ -22,7 +22,7 @@ SubmitBtn.addEventListener("click", async function () {
 })
 async function getSession() {
     try {
-        const response = await fetch("http://localhost:3000/api/session/all", {
+        const response = await fetch("https://progress-tracker-706k.onrender.com/api/session/all", {
             method: "GET",
             headers: {
                 "Authorization": "Bearer " + localStorage.getItem("token")
